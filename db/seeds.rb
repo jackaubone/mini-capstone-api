@@ -7,7 +7,26 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-product1 = Product.create(name: "Giant Rasta Banana", price: 100, image_url:"https://img.5milesapp.com/image/upload/f_auto,t_i800/v1481413844/wvcqca8bhrs3x443pyya.jpg", description: "A giant rasta banana, the perfect best friend.")
+product1 = Product.create(
+  name: "Giant Rasta Banana", 
+  price: 100,
+  mage_url:"https://img.5milesapp.com/image/upload/f_auto,t_i800/v1481413844/wvcqca8bhrs3x443pyya.jpg",
+  description: "A giant rasta banana, the perfect best friend."
+  )
 
 #product1.save
-p product1
+
+product = Product.create(
+  name: "Crab", 
+  price: 5,
+  image_url: "https://i.pinimg.com/originals/d6/60/37/d660375ad1189c2b6caba56c9b8bbd27.jpg", 
+  description: "A delicious meal."
+)
+
+Product.create(
+  name: "Ford Mustang", 
+  price: 10000, 
+  image_url: "https://cdn.motor1.com/images/mgl/Gx4J1/s1/4x3/2022-ford-mustang-shelby-gt500-heritage-edition-front-corner-high-angle.webp", 
+  description: "A really fast and manly car." 
+)
+p product
