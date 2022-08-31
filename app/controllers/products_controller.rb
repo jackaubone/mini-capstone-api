@@ -4,9 +4,12 @@ class ProductsController < ApplicationController
     products = Product.all
     render json: products.as_json
   end
-  def banana
-    banan = Product.find_by(id: 1)
-    render json: banan.as_json
+
+  def one_product
+    product = Product.find_by(id: params["id"])
+    render json: product.as_json
+
+    p params
   end
 
 end
