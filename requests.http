@@ -19,11 +19,11 @@ Content-Type: application/json
 
 
 ### Product Update Action
-PATCH http://localhost:3000/products/3.json
+PATCH http://localhost:3000/products/5.json
 Content-Type: application/json
 
 {
-  "description": "An interesting crab"
+  "image_url": "https://tenor.com/view/dancing-cockroach-meme-roach-spinning-gif-15776567"
 }
 
 
