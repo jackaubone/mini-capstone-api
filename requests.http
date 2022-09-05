@@ -1,9 +1,9 @@
 ### Product Index Action
-GET http://localhost:3000/products
+GET http://localhost:3000/products.json
 
 
 ### Product Show Action
-GET http://localhost:3000/products/3
+GET http://localhost:3000/products/5.json
 
 
 ### Product Create Action
@@ -23,8 +23,7 @@ PATCH http://localhost:3000/products/5.json
 Content-Type: application/json
 
 {
-  "image_url": "https://tenor.com/view/dancing-cockroach-meme-roach-spinning-gif-15776567"
-}
+  "price": 10000}
 
 
 ### Product Delete Action
