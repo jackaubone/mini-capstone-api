@@ -7,26 +7,54 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-product1 = Product.create(
+Product.create(
   name: "Giant Rasta Banana", 
   price: 100,
-  mage_url:"https://img.5milesapp.com/image/upload/f_auto,t_i800/v1481413844/wvcqca8bhrs3x443pyya.jpg",
-  description: "A giant rasta banana, the perfect best friend."
+  image_url:"https://img.5milesapp.com/image/upload/f_auto,t_i800/v1481413844/wvcqca8bhrs3x443pyya.jpg",
+  description: "A giant rasta banana, the perfect best friend.",
+  inventory: 5000
   )
 
-#product1.save
 
-product = Product.create(
+Product.create(
   name: "Crab", 
   price: 5,
   image_url: "https://i.pinimg.com/originals/d6/60/37/d660375ad1189c2b6caba56c9b8bbd27.jpg", 
-  description: "A delicious meal."
+  description: "A delicious meal.",
+  inventory: 10
 )
 
 Product.create(
   name: "Ford Mustang", 
   price: 10000, 
   image_url: "https://cdn.motor1.com/images/mgl/Gx4J1/s1/4x3/2022-ford-mustang-shelby-gt500-heritage-edition-front-corner-high-angle.webp", 
-  description: "A really fast and manly car." 
+  description: "A really fast and manly car." ,
+  inventory: 20
 )
-p product
+
+Product.create(
+  name: "Roach",
+  price: 1000000,
+  image_url: "https://tenor.com/view/dancing-cockroach-meme-roach-spinning-gif-15776567",
+  description: "A little cockroach",
+  inventory: 1
+)
+
+Supplier.create(
+  name: "Joe Swanson",                                           
+  email: "joe@test.com",                                            
+  phone_number: "213123214", 
+)
+
+
+Supplier.create(
+  name: "Peter Griffin",                                            
+  email: "Petah@test.com",                                          
+  phone_number: "5555555",   
+)
+
+Supplier.create(
+  name: "Stanley Steamer",
+  email: "stan@test.com",
+  phone_number: "984932849384",
+)
