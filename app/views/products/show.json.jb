@@ -3,12 +3,14 @@
   name: @product.name,
   price: @product.price,
   description: @product.description,
-  inventory: @product.inventory
+  inventory: @product.inventory,
   is_discounted?: @product.is_discounted?,
   tax: @product.tax,
   total: @product.total,
 
   supplier: @product.supplier,
+
+  image: @product.image,
 
   created_at: @product.created_at,
   updated_at: @product.updated_at

@@ -1,5 +1,5 @@
 class Image < ApplicationRecord
   def products
-    Product.where(image_id: id)
+    Product.find_by(id: product_id)
   end
 end
