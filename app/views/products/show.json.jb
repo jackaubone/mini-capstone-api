@@ -10,7 +10,7 @@
 
   supplier: @product.supplier,
 
-  image: @product.image,
+  images: @product.images,
 
   created_at: @product.created_at,
   updated_at: @product.updated_at

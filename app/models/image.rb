@@ -1,5 +1,7 @@
 class Image < ApplicationRecord
-  def products
-    Product.find_by(id: product_id)
-  end
+  belongs_to :products
+  
+  # def products
+  #   Product.find_by(id: product_id)
+  # end
 end
